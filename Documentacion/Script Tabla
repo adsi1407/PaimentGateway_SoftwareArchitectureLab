@@ -1,0 +1,14 @@
+create table transaccion (
+id int not null autoincrement,   --id de latransaccion
+tipodocumento varchar(15) not null,  
+documento INT(20) not null,
+nombre varchar(40) not null,
+email varchar(50) not null,
+numerotarjeta INT(50) not null,    
+codigocvv INT(5) not null,
+tipotarjeta varchar(30) not null,     --
+valortransaccion INT(50) not null,
+fechavemcimiento date not null,
+fechatransaccion TIMESTAMP not null
+primary key (id)
+)
